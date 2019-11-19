@@ -16,3 +16,8 @@
        description: Learning rate
        type: float
        default: 0.001
+
+- endpoint:
+    name: MNIST-server
+    image: tensorflow/tensorflow:1.15.0-gpu-py3
+    wsgi: deploy:application
